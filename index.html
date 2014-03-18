@@ -1,0 +1,88 @@
+<!doctype html>
+<html manifest="offline.manifest">
+<head>
+	<title>Percentage Me Up</title>
+ 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+
+	<!-- Home screen icon  Mathias Bynens mathiasbynens.be/notes/touch-icons -->
+	<!-- For iPhone 4 with high-resolution Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon.png">
+	<!-- For first-generation iPad: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon.png">
+	<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+	<!-- For nokia devices and desktop browsers : -->
+	
+
+	<!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+	<meta http-equiv="cleartype" content="on">
+
+	<!-- jQuery Mobile CSS bits -->
+	<link rel="stylesheet" href="jquery.mobile-1.4.0.min.css" />
+
+	<!-- Custom css -->
+	<link rel="stylesheet" href="custom.css" />
+
+	<!-- Javascript includes -->
+	<script src="jquery-1.10.2.js"></script>
+	<script src="mobileinit.js"></script>
+	<script src="ios-orientationchange-fix.min.js"></script>
+	<script src="jquery.mobile-1.4.0.js"></script>
+	<script src="application.js"></script>
+	<!-- Startup Images for iDevices -->
+	
+</head>
+<body>
+	<div data-role="page" >
+
+		<div data-role="header" data-position="fixed" data-theme="b" data-content-theme="b">
+			<h1>%MeUp</h1>
+		</div>
+		<div id="home">
+		<div data-role="content" >
+			<div class="ui-grid-c">
+			<div class="ui-block-a"><button type="button" data-theme="c" id="radio-choice-c" />X-Y</div>
+			<div class="ui-block-b"><button type="button" data-theme="c" id="radio-choice-d" value="off" />X%</div>
+			
+			<div class="ui-block-c"><button type="button" data-theme="c" id="radio-choice-e" value="other" />InDe</div>
+			<div class="ui-block-d"><button type="button" data-theme="c" id="clear" value="other" />Clr</div>
+			</div>
+		
+		<div data-role="fieldcontain">
+			<!--<label for="name" id="first"></label>-->
+			<input type="text" name="name" id="one" value="" placeholder="X number goes in here" />
+		</div>
+		<div data-role="fieldcontain">
+			<!--<label for="name" id="second"></label>-->
+			<input type="text" name="name" id="two" value="" placeholder="Y number goes in here" />
+		</div>
+		<div id="box">
+
+			<ul>
+				<li>X-Y &mdash; X is what percentage of Y</li>
+				<li>X% &mdash; What is X% of Y</li>
+				<li>InDe &mdash; Y's increase/decrease as a percentage of X</li>
+			</ul>
+		</div>
+		<div>
+			<br /><br /><br />
+		</div>
+		<div data-role="popup" id="pop">
+			<p id ="hello"></p>
+		</div>
+		
+
+		</div>
+		</div>
+		</div>
+		
+
+	
+</body>
+</html>

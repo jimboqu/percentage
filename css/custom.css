@@ -1,0 +1,14 @@
+/*
+	jQuery Mobile Boilerplate
+	css/custom.css
+*/
+#home {
+	
+	background: url('../background2.png');
+
+}
+
+#pop {background-color: #E0E9EC;
+		border-color: black;
+		font-size: 30px;
+	}

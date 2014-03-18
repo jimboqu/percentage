@@ -1,0 +1,55 @@
+/* 
+	jQuery Mobile Boilerplate
+	application.js
+*/
+/* 
+	jQuery Mobile Boilerplate
+	application.js
+*/
+$(document).on("pageinit", function(event){
+	$( "#radio-choice-c" ).on( "click", function() {
+		var no = $("#one").val();
+		var no = parseInt(no);
+		var yes = $("#two").val();
+		var yes = parseInt(yes);
+		
+		var answer = (no / yes * 100);
+		if (isNaN(answer)) {
+			$("#pop").popup('open').html("You need two numbers stupid!");
+			} else {
+		$("#pop").popup('open').html( no + " is " + answer + "% of " + yes)};
+	});
+	$("#radio-choice-d").click(function (){
+		var noo = $("#one").val();
+		var noo = parseInt(noo);
+		var yess = $("#two").val();
+		var yess = parseInt(yess);
+		var answer = (noo * yess / 100);
+		if (isNaN(answer)) {
+			$("#pop").popup('open').html("You need two numbers stupid!");
+			} else {$("#pop").popup('open').html(noo + "% of " + yess + " is " + answer);
+		};
+		
+	})
+	$("#radio-choice-e").click(function(){
+		var noo = $("#one").val();
+		var noo = parseInt(noo);
+		var yess = $("#two").val();
+		var yess = parseInt(yess);
+		var answer = (yess - noo);
+		var answer = (answer / noo * 100);
+		var answer = Math.round(answer);
+		if (isNaN(answer)) {$("#pop").popup('open').html("You need two numbers stupid!");} else 
+		{$("#pop").popup('open').html(yess + " is a " + answer + "% on " + noo);
+	};
+		
+	})
+	$("#clear").click(function(){
+     	$("input[type=text]").each(function(){
+     		$(this).val("");
+     			
+     	});
+     })
+});
+
+
